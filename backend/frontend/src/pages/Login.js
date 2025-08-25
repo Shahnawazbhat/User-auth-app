@@ -31,7 +31,7 @@ function Login() {
 
     try {
       // 2. API request
-      const response = await fetch("http://localhost:5000/auth/login", {
+      const response = await fetch("http://user-auth-app-api.vercel.app/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginInfo),
